@@ -1,0 +1,248 @@
+// cores
+$bg-color: #212121;
+$black: #000;
+$white: #fff;
+$title: #22C55E;
+$emphasis: #787774;
+  
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+html,
+body {
+    background-color: $bg-color;
+    margin: 0;
+    font-family: rubik;
+    overflow-x: hidden;
+    color: $white;
+}
+
+.scaffold {
+
+    .menu {
+        padding: 24px;
+
+        nav {
+            display: flex;
+
+            a {
+                margin-right: 16px;
+                font-size: 1.2rem;
+                text-decoration: none;
+                color: $white;
+                transition: .2s;
+
+                &:hover {
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+
+    .container {
+        padding: 4rem 6rem;
+
+        > div {
+            margin-bottom: 2rem;
+        }
+
+        .header {
+            display: flex;
+            justify-content: center;
+
+            img {
+                height: 10rem;
+                border-radius: 50%;
+            }
+        }
+
+        .info {
+            h1 {
+                padding-bottom: .5rem;
+                color: $title;
+            }
+
+            p {
+                font-size: 1.2rem;
+            }
+        }
+
+        .about {
+            h2 {
+                padding-bottom: .5rem;
+                color: $title;
+            }
+
+            p {
+                font-size: 1.2rem;
+            }
+        }
+
+        .education {
+            h2 {
+                padding-bottom: .5rem;
+                color: $title;
+            }
+
+            .block {
+                @extend %block;
+            }
+        }
+        
+        .courses {
+            h2 {
+                padding-bottom: .5rem;
+                color: $title;
+            }
+
+            .block {
+                @extend %block;
+            }
+        }
+    }
+
+    footer {
+        padding-bottom: 2rem;
+
+        .links {
+            display: flex; justify-content: center;
+
+            a {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin: 0 1rem;
+                font-size: 1rem;
+                text-decoration: none;
+                color: $black;
+                transition: .2s;
+                background-color: $white;
+                padding: .5rem;
+                border-radius: .5rem; 
+
+                &:hover {
+                    opacity: .6;
+                }
+
+                img {
+                    margin-bottom: 0.2rem;
+                }
+            }
+        }
+    }
+
+    #repos {
+        display: flex;
+        justify-content: center;
+
+        .work {
+            width: 40rem;
+
+            .title {
+                font-size: 2rem;
+                margin-top: 1rem;
+                font-weight: 600;
+              }
+
+              .list {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+              }
+
+              .list-item {
+                margin: 1rem 0 2rem;
+                display: flex;
+                flex-direction: column;
+
+                .name {
+                    color: $title;
+                    text-decoration: none;
+                    font-size: 1.2rem;
+                    cursor: pointer;
+                    
+                    &:hover { 
+                        text-decoration: underline;
+                      }
+              }
+
+              .description {
+                color: $emphasis;
+                margin: 8px 0;
+              }
+        }
+        }
+    }
+
+        .contact{
+            .inner-width{
+              max-width: 40rem;
+              margin: auto;
+
+              h2{
+                color: $white;
+                font-size: 2rem;
+                margin-top: 1rem;
+              }
+
+              .name, .email, .message{
+                background: none;
+                border: none;
+                outline: none;
+                border-bottom: 1px solid;
+                color: #888;
+                padding: 10px 6px;
+                font-size: 14px;
+                margin-bottom: 40px;
+              }
+              
+              .name{
+                float: left;
+                width: 48%;
+              }
+              
+              .email{
+                float: right;
+                width: 48%;
+              }
+              
+              .message{
+                min-width: 100%;
+                max-width: 100%;
+              }
+            }
+
+            button{
+                background: none;
+                color: $title;
+                border: .5px solid $title;
+                padding: 12px 40px;
+                border-radius: 4px;
+                text-transform: inherit;
+                transition: .2s linear;
+                cursor: pointer;
+
+                &:hover{
+                    color: #fff;
+                    background: $title;
+                  }
+              }
+          }
+}   
+
+%block {
+    margin-bottom: 1rem;
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    p {
+        font-size: 1rem;
+        color: $emphasis;
+    }
+}

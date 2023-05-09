@@ -1,0 +1,252 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+}
+
+html,
+body {
+  background-color: #212121;
+  margin: 0;
+  font-family: rubik;
+  overflow-x: hidden;
+  color: #fff;
+}
+
+.scaffold .menu {
+  padding: 24px;
+}
+
+.scaffold .menu nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.scaffold .menu nav a {
+  margin-right: 16px;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #fff;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.scaffold .menu nav a:hover {
+  font-weight: bold;
+}
+
+.scaffold .container {
+  padding: 4rem 6rem;
+}
+
+.scaffold .container > div {
+  margin-bottom: 2rem;
+}
+
+.scaffold .container .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.scaffold .container .header img {
+  height: 10rem;
+  border-radius: 50%;
+}
+
+.scaffold .container .info h1 {
+  padding-bottom: .5rem;
+  color: #22C55E;
+}
+
+.scaffold .container .info p {
+  font-size: 1.2rem;
+}
+
+.scaffold .container .about h2 {
+  padding-bottom: .5rem;
+  color: #22C55E;
+}
+
+.scaffold .container .about p {
+  font-size: 1.2rem;
+}
+
+.scaffold .container .education h2 {
+  padding-bottom: .5rem;
+  color: #22C55E;
+}
+
+.scaffold .container .courses h2 {
+  padding-bottom: .5rem;
+  color: #22C55E;
+}
+
+.scaffold footer {
+  padding-bottom: 2rem;
+}
+
+.scaffold footer .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.scaffold footer .links a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 1rem;
+  font-size: 1rem;
+  text-decoration: none;
+  color: #000;
+  -webkit-transition: .2s;
+  transition: .2s;
+  background-color: #fff;
+  padding: .5rem;
+  border-radius: .5rem;
+}
+
+.scaffold footer .links a:hover {
+  opacity: .6;
+}
+
+.scaffold footer .links a img {
+  margin-bottom: 0.2rem;
+}
+
+.scaffold #repos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.scaffold #repos .work {
+  width: 40rem;
+}
+
+.scaffold #repos .work .title {
+  font-size: 2rem;
+  margin-top: 1rem;
+  font-weight: 600;
+}
+
+.scaffold #repos .work .list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.scaffold #repos .work .list-item {
+  margin: 1rem 0 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.scaffold #repos .work .list-item .name {
+  color: #22C55E;
+  text-decoration: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.scaffold #repos .work .list-item .name:hover {
+  text-decoration: underline;
+}
+
+.scaffold #repos .work .list-item .description {
+  color: #787774;
+  margin: 8px 0;
+}
+
+.scaffold .contact .inner-width {
+  max-width: 40rem;
+  margin: auto;
+}
+
+.scaffold .contact .inner-width h2 {
+  color: #fff;
+  font-size: 2rem;
+  margin-top: 1rem;
+}
+
+.scaffold .contact .inner-width .name, .scaffold .contact .inner-width .email, .scaffold .contact .inner-width .message {
+  background: none;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid;
+  color: #888;
+  padding: 10px 6px;
+  font-size: 14px;
+  margin-bottom: 40px;
+}
+
+.scaffold .contact .inner-width .name {
+  float: left;
+  width: 48%;
+}
+
+.scaffold .contact .inner-width .email {
+  float: right;
+  width: 48%;
+}
+
+.scaffold .contact .inner-width .message {
+  min-width: 100%;
+  max-width: 100%;
+}
+
+.scaffold .contact button {
+  background: none;
+  color: #22C55E;
+  border: 0.5px solid #22C55E;
+  padding: 12px 40px;
+  border-radius: 4px;
+  text-transform: inherit;
+  -webkit-transition: .2s linear;
+  transition: .2s linear;
+  cursor: pointer;
+}
+
+.scaffold .contact button:hover {
+  color: #fff;
+  background: #22C55E;
+}
+
+.scaffold .container .education .block, .scaffold .container .courses .block {
+  margin-bottom: 1rem;
+}
+
+.scaffold .container .education .block h3, .scaffold .container .courses .block h3 {
+  font-size: 1.2rem;
+}
+
+.scaffold .container .education .block p, .scaffold .container .courses .block p {
+  font-size: 1rem;
+  color: #787774;
+}
+/*# sourceMappingURL=style.css.map */
